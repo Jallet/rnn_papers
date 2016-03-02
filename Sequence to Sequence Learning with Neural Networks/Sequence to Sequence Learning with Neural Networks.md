@@ -8,7 +8,8 @@ Machine translation from English to French.
 ##Method
 ###Overview
 It is a statistical machine translation approach so it uses a **Stacked LSTM** (4 layer) to parameterized a **Conditioned Possibility**
-$$p(y_1,... ,y_{T'}| x_1,...,x_T)=\Pi_{t=1}^{T'} p(y_t|v,y_1,...y_{t-1})$$
+
+![](https://github.com/KevinWangTHU/rnn_papers/raw/master/Sequence%20to%20Sequence%20Learning%20with%20Neural%20Networks/eq1.png)
 
 ###Stacked LSTM
 
