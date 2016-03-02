@@ -17,7 +17,7 @@ This model consists of two parts:
 
 As shown in figure 1.
 
-![Figure 1](a)
+![Figure 1](https://github.com/KevinWangTHU/rnn_papers/raw/master/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate/fig1.png)
 
 ###Encoder
 A vector concatenated by two vectors, which were produced by a forward and a backward RNN.
