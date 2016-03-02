@@ -19,7 +19,7 @@ As shown in the figure 1, first the LSTM reads in the input, then \<EOS\>. After
 
 Note that here a unit is actually 4 vertically placed units (Refer to the [author's talk](research.microsoft.com/apps/video/?id=239083) for more details).
 
-The input words are embedding vectors and the output words are predicted by a *super huge softmax (1000\*80000\!!)*.
+The input words are embedding vectors and the output words are predicted by _a super huge softmax \(1000\*80000\!\)_.
 
 
 ##Contribution
