@@ -11,7 +11,8 @@ It is a statistical machine translation approach so it uses a **Stacked LSTM** (
 $$p(y_1,... ,y_{T'}| x_1,...,x_T)=\Pi_{t=1}^{T'} p(y_t|v,y_1,...y_{t-1})$$
 
 ###Stacked LSTM
-**Figure1**
+
+![Figure 1](https://github.com/KevinWangTHU/rnn_papers/raw/master/Sequence%20to%20Sequence%20Learning%20with%20Neural%20Networks/fig1.png)
 
 As shown in the figure 1, first the LSTM reads in the input, then \<EOS\>. Afterwards it begins to output translated sequence until another \<EOS\> is predicted.
 
