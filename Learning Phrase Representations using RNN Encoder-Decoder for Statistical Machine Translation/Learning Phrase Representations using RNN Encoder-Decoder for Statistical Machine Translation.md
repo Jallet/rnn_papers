@@ -1,6 +1,6 @@
 #Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation - EMNLP 2014
 
-##Note wrote by Mingdong
+###Note wrote by Mingdong
 
 ##Task
 Machine translation from English to French
@@ -38,3 +38,5 @@ It can just get phrase representation.
 It is not a pure generation method.
 
 
+##Cite
+[Bibtex](http://aclweb.org/anthology/D/D14/D14-1179.bib)

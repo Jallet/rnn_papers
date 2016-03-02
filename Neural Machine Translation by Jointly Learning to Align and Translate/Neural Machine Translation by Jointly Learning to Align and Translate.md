@@ -1,6 +1,6 @@
 #Neural Machine Translation by Jointly Learning to Align and Translate - ICLR 2015
 
-##Note wrote by Mingdong
+###Note wrote by Mingdong
 
 ##Task
 Machine Translation from English to French
@@ -53,3 +53,6 @@ There are many things that can be replaced, which makes me curious about their e
 	  * Can it be replaced by LSTM, single RNN or just raw input vector?
 2. GRU
 	  * Can it be replaced by LSTM or other RNN?
+
+##Cite
+[Bibtex](https://scholar.google.hk/scholar.bib?q=info:7shpF8Tg3oIJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAVtakNirnmsHvYkFLQk9A7MZYbgHc8yu8&scisf=4&hl=en)

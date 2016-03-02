@@ -1,6 +1,6 @@
 #Sequence to Sequence Learning with Neural Networks - NIPS 2014
 
-##Note wrote by Mingdong
+###Note wrote by Mingdong
 
 ##Task
 Machine translation from English to French.
@@ -39,5 +39,7 @@ Stacked LSTM and large softmax make training very time consuming. 8 GPU * 10 day
 
 [Author's Talk](research.microsoft.com/apps/video/?id=239083) is very informative.
 
+##Cite
+[Bibtex](https://scholar.google.hk/scholar.bib?q=info:jVIu8OnqRLYJ:scholar.google.com/&output=citation&scisig=AAGBfm0AAAAAVtagbMd5lpdkS9BKtS6MdGr4_wsJDXPc&scisf=4&hl=en)
 
 
