@@ -17,23 +17,27 @@ It is a statistical machine translation approach so it uses a **Stacked LSTM** (
 
 As shown in the figure 1, first the LSTM reads in the input, then \<EOS\>. Afterwards it begins to output translated sequence until another \<EOS\> is predicted.
 
+Note that here a unit is actually 4 vertically placed units (Refer to the [author's talk](research.microsoft.com/apps/video/?id=239083) for more details).
+
 The input words are embedding vectors and the output words are predicted by a *super huge softmax (1000\*80000\!!)*.
 
 
 ##Contribution
-It is the first paper of recent Seq2Seq learning trend. Utilized LSTM to model possibility and output sequences.
+Improve the performance by using Stacked LSTM comparing to Cho's and Bahdanau's work. **\#TODO reference is needed**
+
 ###Tricks - Reverse input sequence 
 Reduce the long term dependency problem.
 
 
 
 ##Drawback
-Since this is the first paper about this topic, it did not use any more sophisticated techniques like *Attention*. Thus it have to use more parameters (stacked LSTM)
+It did not use any more sophisticated techniques like *Attention*. Thus it have to use more parameters (stacked LSTM)
 
 Stacked LSTM and large softmax make training very time consuming. 8 GPU * 10 days.
 
 ##Reference
-[Author's Talk](research.microsoft.com/apps/video/?id=239083)
+
+[Author's Talk](research.microsoft.com/apps/video/?id=239083) is very informative.
 
 
 
