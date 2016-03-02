@@ -23,7 +23,7 @@ The input words are embedding vectors and the output words are predicted by _a s
 
 
 ##Contribution
-Improve the performance by using Stacked LSTM comparing to Cho's and Bahdanau's work. **\#TODO reference is needed**
+Improve the performance by using Stacked LSTM comparing to [Cho's](https://github.com/KevinWangTHU/rnn_papers/blob/master/Learning%20Phrase%20Representations%20using%20RNN%20Encoder-Decoder%20for%20Statistical%20Machine%20Translation/Learning%20Phrase%20Representations%20using%20RNN%20Encoder-Decoder%20for%20Statistical%20Machine%20Translation.md) and [Bahdanau's](https://github.com/KevinWangTHU/rnn_papers/blob/master/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate/Neural%20Machine%20Translation%20by%20Jointly%20Learning%20to%20Align%20and%20Translate.md) work.
 
 ###Tricks - Reverse input sequence 
 Reduce the long term dependency problem.
