@@ -15,7 +15,7 @@ Thus, this paper is more related to standard MT method.
 ##Method
 It uses a RNN-Encoder-Decoder structure , as shown in figure 1. It uses **GRU** instead of standard RNN or LSTM.
 
-![](url)
+![](https://github.com/KevinWangTHU/rnn_papers/raw/master/Learning%20Phrase%20Representations%20using%20RNN%20Encoder-Decoder%20for%20Statistical%20Machine%20Translation/fig1.png)
 
 Note that in this paper, the flow is
 
