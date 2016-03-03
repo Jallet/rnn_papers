@@ -1,0 +1,57 @@
+# Sequence Level Training with Recurrent Neural Networks
+
+(written by Ziyu Wang)
+
+Cite as: Ranzato, Marc'Aurelio, et al. "Sequence Level Training with Recurrent Neural Networks." submitted to ICLR 2016.
+
+## Task
+
+提出了新的文本生成任务的训练方法.
+
+在评估各种训练方法时, 文章使用了简单的 RNN encoder/decoder 模型, 在摘要, 翻译和图片标题生成任务中进行了实验.
+
+## Method
+
+### Previous work: DAD [^1]
+
+[^1]: Venkatraman, A., Hebert, M., and Bagnell, J.A.  Improving multi-step prediction of learned time series models. In AAAI, 2015
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{dad.png}
+\end{figure}
+
+DAD 与简单的最大似然目标相似, 但在训练阶段, 在生成每一个单词 $w_t$ 时, 我们以概率 $p$ 将 $w_{t+1}$ 作为 $t+1$ 时的输入, 以 $1-p$ 的概率以模型的预测作为输入.
+
+DAD 中训练目标仍为模型每步预测与训练集对应词的交叉熵; BP 时梯度不经模型的预测传播.
+
+### E2E 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{e2e.png}
+\end{figure}
+
+E2E 模拟了 beam search 的过程. 训练时, 在时间 $t$, 我们选取模型在前一步预测的最有可能的 $k$ 个词, 将它们的 embedding 按预测概率加权平均作为当前的输入.
+
+训练目标同样为交叉熵.
+
+### Sequence level training
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{slt.png}
+\end{figure}
+
+这一方法将生成问题看作强化学习问题, 其中 agent 定义为生成模型, action 为在每个时间 $t$ 预测下一个单词的行为. 当生成整个序列之后, agent 得到的 reward 为生成序列的 ROUGE-2 或 BLEU 值.
+
+与传统 RL 问题相比, 文本生成中方案空间更大 ($|V|^{len}$), 因此文章对 RL 做了如下修改:
+
+- 用传统的交叉熵 (最大似然) 对模型做预训练. 这使 RL 在搜索空间中能有更好的起始点;
+- 逐渐增加 RL 训练的比例, 以稳定训练过程. RL 训练阶段中, 对长度为 $T$ 的序列, 我们在前 $T-\Delta$ 步中使用交叉熵训练, 在后 $\Delta$ 步中再用 RL 训练; 在训练中逐渐增加 $\Delta$, 直到 $\Delta=T$.
+
+## Contribution
+
+- 将 RL 方法引入到文本生成类任务中.
+- 提出了更合理的生成任务的训练目标.
+
