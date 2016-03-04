@@ -1,6 +1,6 @@
 #Sequence to Sequence Learning with Neural Networks - NIPS 2014
 
-###Note wrote by Mingdong
+###Written by Mingdong
 
 ##Task
 Machine translation from English to French.

@@ -1,6 +1,6 @@
 #Neural Machine Translation by Jointly Learning to Align and Translate - ICLR 2015
 
-###Note wrote by Mingdong
+###Written by Mingdong
 
 ##Task
 Machine Translation from English to French

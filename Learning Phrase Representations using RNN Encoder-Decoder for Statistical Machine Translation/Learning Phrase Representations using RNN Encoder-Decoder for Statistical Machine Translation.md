@@ -1,6 +1,6 @@
 #Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation - EMNLP 2014
 
-###Note wrote by Mingdong
+###Written by Mingdong
 
 ##Task
 Machine translation from English to French
