@@ -29,7 +29,7 @@ Contrary to previous work, where attention is an __intermediate__ step uesd to b
 ###CNN Sentence Encoder and RNN Document Encoder
 See figure. Pretty straight forward.
 
-![Figure 2](toadd)
+![Fig 1](https://raw.githubusercontent.com/KevinWangTHU/rnn_papers/master/Neural%20Summarization%20by%20Extracting%20Sentences%20and%20Words/fig1.png)
 
 _Note that they use another task to pretrain the CNN encoder._
 
@@ -42,9 +42,9 @@ Here they do not use attention mechanism.
 
 
 ###Word Extractor
-![Figure 3](toadd)
+![Fig 2](https://raw.githubusercontent.com/KevinWangTHU/rnn_papers/master/Neural%20Summarization%20by%20Extracting%20Sentences%20and%20Words/fig2.png)
 
-![Formulae](toadd)
+![Formulae](https://raw.githubusercontent.com/KevinWangTHU/rnn_papers/master/Neural%20Summarization%20by%20Extracting%20Sentences%20and%20Words/fig3.png)
 
 The architecture is shown in Figure 3.
 
